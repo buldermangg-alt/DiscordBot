@@ -16,7 +16,8 @@ for(const file of commandFiles){
  
  
 client.once('ready', () => {
-    console.log('Just a bot. is online!');
+    console.log(`Logged in as ${client.user.tag}!`);
+    client.user.setActivity("Visual studio code!", {type: "PLAYING"});
 });
  
 client.on('message', message =>{
