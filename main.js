@@ -38,8 +38,6 @@ client.on('message', message =>{
         client.commands.get('discordstatus').execute(message, args);
     } else if (command == 'help'){
         client.commands.get('help').execute(message, args);
-    } else if (command == 'roletest'){
-        client.commands.get('roletest').execute(message, args);
     } else if (command == 'credits'){
         client.commands.get('credits').execute(message, args);
     } else if (command == 'open_source'){
