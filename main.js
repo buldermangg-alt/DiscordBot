@@ -28,8 +28,6 @@ client.on('message', message =>{
  
     if(command === 'test'){
         client.commands.get('test').execute(message, args);
-    } else if (command == 'youtube'){
-        client.commands.get('youtube').execute(message,args);
     } else if (command == 'todolist'){
         client.commands.get('todolist').execute(message, args);
     } else if (command == 'verify'){
@@ -42,12 +40,17 @@ client.on('message', message =>{
         client.commands.get('credits').execute(message, args);
     } else if (command == 'open_source'){
         client.commands.get('open_source').execute(message, args);
-    } else if (command == 'ping'){
-        client.commands.get('ping').execute(message, args);
+    } else if (command == 'avatar'){
+        client.commands.get('avatar').execute(message, args);
+    } else if (command == 'server'){
+        client.commands.get('server').execute(message, args);
+    } else if (command == 'reload'){
+        client.commands.get('reload').execute(message, args);
+    } else if (command == 'prune'){
+        client.commands.get('prune').execute(message, args);
     }
 
 });
  
-client.login(' ');
- 
+client.login('Your-token-here');
  
