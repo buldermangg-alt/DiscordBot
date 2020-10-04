@@ -19,7 +19,7 @@ client.once('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
     client.user.setActivity("Visual studio code!", {type: "PLAYING"});
 });
- 
+
 client.on('message', message =>{
     if(!message.content.startsWith(prefix) || message.author.bot) return;
  
@@ -42,7 +42,10 @@ client.on('message', message =>{
         client.commands.get('credits').execute(message, args);
     } else if (command == 'open_source'){
         client.commands.get('open_source').execute(message, args);
+    } else if (command == 'ping'){
+        client.commands.get('ping').execute(message, args);
     }
+
 });
  
 client.login(' ');
