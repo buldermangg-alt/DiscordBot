@@ -54,6 +54,8 @@ client.on('message', message =>{
         client.commands.get('uptime').execute(message,args,client);
     } else if (command == 'status'){
         client.commands.get('status').execute(message,args,client,MessageEmbed,fs,os);
+    } else if (command == 'embed'){
+        client.commands.get('embed').execute(message, args,Discord);
     }
 
 });
