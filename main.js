@@ -30,8 +30,6 @@ client.on('message', message =>{
  
     if(command === 'test'){
         client.commands.get('test').execute(message, args);
-    } else if (command == 'todolist'){
-        client.commands.get('todolist').execute(message, args);
     } else if (command == 'verify'){
         client.commands.get('verify').execute(message, args);
     } else if (command == 'discordstatus'){
